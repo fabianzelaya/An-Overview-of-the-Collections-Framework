@@ -29,7 +29,7 @@ At the root of the hierarchy is the `Collection` interface. That interface has m
 | System.out.println(coll); | Invokes the toString method and prints [Harry, Sally]. |
 | coll.remove("Harry"); <br /> boolean b = coll.remove("Tom"); | Removes an element from the collection, returning false if the element is not present. b is false. |
 | b = coll.contains("Sally"); | Checks whether this collection contains a given element. b is now true. |
-| for (String s : coll)  { <br /> System.out.println(s); <br />} <br /> | You can use the “for each” loop with any collection. This loop prints the elements on separate lines. |
+| for (String s : coll)  { <br />    System.out.println(s); <br />} <br /> | You can use the “for each” loop with any collection. This loop prints the elements on separate lines. |
 | Iterator<String> iter = coll.iterator(); | You use an iterator for visiting the elements in the collection (see Section 13.2). |
 
 The `List` interface describes an important category of collections. In Java, a list is a collection that remembers the order of its elements (see Figure 13.1.2). The `ArrayList` class implements the `List` interface. An `ArrayList` is simply a class containing an array that is expanded as needed. **_If you are not concerned about efficiency, you can use the `ArrayList` class whenever you need to collect objects_**. However, several common operations are inefficient with array lists. In particular, if an element is added or removed, the elements at larger positions must be moved.
