@@ -30,9 +30,7 @@ At the root of the hierarchy is the Collection interface. That interface has met
 | System.out.println(coll); | Invokes the toString method and prints [Harry, Sally]. |
 | coll.remove("Harry"); <br /> boolean b = coll.remove("Tom"); | Removes an element from the collection, returning false if the element is not present. b is false. |
 | b = coll.contains("Sally"); | Checks whether this collection contains a given element. b is now true. |
-| for (String s : coll)  { <br />
-   System.out.println(s); <br />
-} <br /> | You can use the “for each” loop with any collection. This loop prints the elements on separate lines. |
+| for (String s : coll)  { <br /> System.out.println(s); <br />} <br /> | You can use the “for each” loop with any collection. This loop prints the elements on separate lines. |
 | Iterator<String> iter = coll.iterator(); | You use an iterator for visiting the elements in the collection (see Section 13.2). |
 
 
