@@ -70,6 +70,81 @@ Note that there is an empty pair of brackets `<>` after `new ArrayList` on the r
 
 Here is a sample program that demonstrates several collection classes.
 
+<details><summary>CollectionsDemo.java. by Fabian Zelaya</summary>
+<p>
+
+#### We can hide anything, even code!
+
+```java
+import java.util.Collection;
+import java.util.ArrayList;
+import java.util.TreeSet;
+
+/**
+ * @author Fabian Zelaya
+ * @version Fri Sep 9, 2022
+ * @description CollectionsDemo.java.
+ * 
+ */
+
+/**
+   This program demonstrates classes from the Java collections framework.
+*/
+public class CollectionsDemo
+{
+   public static void main(String[] args)
+   {
+      System.out.println("Working with an ArrayList");
+      workWith(new ArrayList<>());
+      System.out.println("Working with a TreeSet");
+      workWith(new TreeSet<>());
+   }
+
+   /**
+      Shows how to work with a collection of strings.
+      @param coll a collection from the Java collections framework
+   */
+   public static void workWith(Collection<String> coll)
+   {
+      coll.add("Harry");
+      coll.add("Sally");
+      coll.add("Fred");
+      coll.add("Wilma");
+      coll.add("Harry");
+      System.out.println(coll);
+      System.out.print("Removing Harry and Tom: ");
+      System.out.print(coll.remove("Harry") + " ");
+      System.out.println(coll.remove("Tom"));
+      System.out.print("Looking for Harry and Sally: ");
+      System.out.print(coll.contains("Harry") + " ");
+      System.out.println(coll.contains("Sally"));
+      for (String s : coll) 
+      {
+         System.out.println(s);
+      }
+   }
+}
+// FZ
+
+/**
+ * Working with an ArrayList
+ * [Harry, Sally, Fred, Wilma, Harry]
+ * Removing Harry and Tom: true false
+ * Looking for Harry and Sally: true true
+ * Sally
+ * Fred
+ * Wilma
+ * Harry
+ * Working with a TreeSet
+ * [Fred, Harry, Sally, Wilma]
+ * Removing Harry and Tom: true false
+ * Looking for Harry and Sally: false true
+ * Fred
+ */
+```
+</p>
+</details>
+
 
 **Important websites:**
 https://www.pluralsight.com/guides/working-tables-github-markdown
