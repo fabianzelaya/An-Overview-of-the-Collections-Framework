@@ -48,3 +48,8 @@ You can use the “for each” loop with any collection. This loop prints the el
 
 Iterator<String> iter = coll.iterator();
 You use an iterator for visiting the elements in the collection (see Section 13.2).
+
+
+
+**Important websites:**
+https://www.pluralsight.com/guides/working-tables-github-markdown
