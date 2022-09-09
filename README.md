@@ -25,8 +25,7 @@ At the root of the hierarchy is the Collection interface. That interface has met
 | --- | --- |
 | coll = new TreeSet<>(); | The TreeSet class (Section 13.4) also implements the Collection interface. |
 | int n = coll.size(); | Gets the size of the collection. n is now 0. |
-| coll.add("Harry"); |
-| coll.add("Sally"); | Adds elements to the collection. |
+| coll.add("Harry"); <br /> coll.add("Sally"); | Adds elements to the collection. |
 
 String s = coll.toString();
 Returns a string with all elements in the collection. s is now [Harry, Sally].
