@@ -26,28 +26,14 @@ At the root of the hierarchy is the Collection interface. That interface has met
 | coll = new TreeSet<>(); | The TreeSet class (Section 13.4) also implements the Collection interface. |
 | int n = coll.size(); | Gets the size of the collection. n is now 0. |
 | coll.add("Harry"); <br /> coll.add("Sally"); | Adds elements to the collection. |
-
-String s = coll.toString();
-Returns a string with all elements in the collection. s is now [Harry, Sally].
-
-System.out.println(coll);
-Invokes the toString method and prints [Harry, Sally].
-
-coll.remove("Harry");
-boolean b = coll.remove("Tom");
-Removes an element from the collection, returning false if the element is not present. b is false.
-
-b = coll.contains("Sally");
-Checks whether this collection contains a given element. b is now true.
-
-for (String s : coll) 
-{
-   System.out.println(s);
-}
-You can use the “for each” loop with any collection. This loop prints the elements on separate lines.
-
-Iterator<String> iter = coll.iterator();
-You use an iterator for visiting the elements in the collection (see Section 13.2).
+| String s = coll.toString(); | Returns a string with all elements in the  ollection. s is now [Harry, Sally]. |
+| System.out.println(coll); | Invokes the toString method and prints [Harry, Sally]. |
+| coll.remove("Harry"); <br /> boolean b = coll.remove("Tom"); | Removes an element from the collection, returning false if the element is not present. b is false. |
+| b = coll.contains("Sally"); | Checks whether this collection contains a given element. b is now true. |
+| for (String s : coll)  { <br />
+   System.out.println(s); <br />
+} <br /> | You can use the “for each” loop with any collection. This loop prints the elements on separate lines. |
+| Iterator<String> iter = coll.iterator(); | You use an iterator for visiting the elements in the collection (see Section 13.2). |
 
 
 
