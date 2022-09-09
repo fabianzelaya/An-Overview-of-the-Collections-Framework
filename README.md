@@ -21,7 +21,7 @@ At the root of the hierarchy is the `Collection` interface. That interface has m
 
 ## Table 13.1.1: The Methods of the Collection Interface.
 | Collection<String> coll = new ArrayList<>(); | The ArrayList class implements the Collection interface. |
-| --- | --- |
+| ---: | ---: |
 | coll = new TreeSet<>(); | The TreeSet class (Section 13.4) also implements the Collection interface. |
 | int n = coll.size(); | Gets the size of the collection. n is now 0. |
 | coll.add("Harry"); <br /> coll.add("Sally"); | Adds elements to the collection. |
