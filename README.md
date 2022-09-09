@@ -70,7 +70,7 @@ Note that there is an empty pair of brackets `<>` after `new ArrayList` on the r
 
 Here is a sample program that demonstrates several collection classes.
 
-<details><summary>**CollectionsDemo.java. by Fabian Zelaya**</summary>
+<details><summary><Strong>CollectionsDemo.java. by Fabian Zelaya<Strong/></summary>
 <p>
 
 #### We can hide anything, even code!
